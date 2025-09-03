@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Best Travel Agency in India">
+  <meta name="description"
+    content="Plan your dream vacation with the Best Travel Agency in India. Explore holiday packages, tours, and travel destinations at affordable prices.">
+  <title>Responsive tour and travel agency website</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+
+
+</head>
+
+<body>
+  <!-- Header Section will show Home Book Packages Gallary Review -->
+  <header>
+
+    <div class="nav">
+      <nav>
+        <a href="#" style="float:left"><span style="color:Yellow">T</span>RAVEL</a>
+        <a href="#home" style="text-align: center;">Home</a>
+        <a href="#booking">Book </a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#Contact">Contact</a>
+<!-- In that header about us place at right side -->
+        <a href="#about" style="float: right; padding-right:80px; word-spacing: normal;">About us</a>
+
+      </nav>
+  </header>
+  <a name="home">
+    </div>
+    <!-- Section part which has video as background -->
+    <section class="video-container">
+      <div>
+        <video autoplay loop muted src="../images/video1.mp4"></video>
+
+        <h1 style="text-align: center; padding-top:250px; color:white;font-weight:bolder;font-size:xx-large;">ADVENTURE
+          IS WORTHWHILE</h1>
+        <h3 style="color:white; text-align: center;">Discover New Places With Us,Adventure Awaits</h3>
+      </div>
+    </section>
+
+    <a name="packages"></a>
+    <!-- In this part will show about packages and book a package -->
+    <section>
+      <h1 style="text-align:center">OUR PACKAGES</h1>
+<!-- this div for first place  -->
+      <div class="pack">
+        <div class="gal">
+          <img src="../images/img2.jpg">
+          <p>
+          <h3> Maharashtra</h3>
+          </p>
+          <p style="text-align:justify">“Explore Maharashtra – from Mumbai’s bustling city life to forts, beaches, and
+            hill stations.</p>
+          <button onclick="openPopup()">Book Now</button>
+
+<!-- if we click book now it ill open a popup form -->
+          <div id="show" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup()">&times;</span>
+              <h2>Enjoy your trip</h2>
+              <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Your name" required><br>
+                <span id="nameerror" style="color:red; background-color:transparent"></span><br><br>
+
+                <label for="contact">Contact</label>
+                <input type="number" id="contact" placeholder="Enter your mobile Number" required><br>
+                <span id="contacterror" style="color:red; background-color:transparent"></span><br><br>
+
+                <label for="Email">Email</label>
+                <input type="text" id="email" placeholder="Enter Your Email" required><br>
+                <span id="emailerror" style="color:red; background-color:transparent"></span><br><br>
+
+                <label for="count">How many</label>
+                <input type="number" id="count" placeholder="Enter number of Travelers " required><br>
+                <span id="maxerror" style="color:red; background-color:transparent"></span><br><br>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter your age " required><br>
+                <span id="ageerror" style="color:red; background-color:transparent"></span><br><br>
+
+                <label for="place">Destination</label>
+                <select id="place" name="place" required>
+                  <option value="">-- Select Destination --</option>
+                  <option value="paris">Maharashtra</option>
+                  <option value="dubai">Punjab</option>
+                  <option value="maldives">Tamilnadu</option>
+                  <option value="switzerland">Kerala</option>
+                  <option value="switzerland">Karnataka</option>
+                  <option value="switzerland">Darjeeling</option>
+                  <option value="switzerland">Kashmir</option>
+                  <option value="switzerland">Goa</option>
+                  <option value="switzerland">New Delhi</option>
+                  <option value="switzerland">Odisa</option>
+                  <option value="goa">Goa</option>
+                </select>
+                <br>
+                <span id="placeerror" style="color:red; background-color:transparent"></span><br><br>
+
+
+                <label for="">Arrivals</label>
+                <input type="date" required><br><br>
+
+                <label for="">Leaving</label>
+                <input type="date" required><br><br>
+
+                <input type="submit" value="Submit" style="background-color: #ffa500; color:white"
+                  onclick="return validate()">
+                <input type="reset" value="Reset" style="background-color: #ffa500; color:white">
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="gal">
+          <img src="../images/img3.jpg">
+          <p>
+          <h3>Punjab</h3>
+          </p>
+          <p style="text-align:justify">“Discover Punjab – the land of golden fields, rich culture, spiritual places,
+            and warm hospitality.”</p>
+          <button onclick="openPopup()">Book Now</button>
+        </div>
+        <div class="gal">
+          <img src="../images/img4.jpg">
+          <p>
+          <h3> Tamilnadu</h3>
+          </p>
+          <p style="text-align:justify">“Experience Tamil Nadu – home to ancient temples, serene beaches, hill stations,
+            and rich traditions.”</p>
+          <button onclick="openPopup()">Book Now</button>
+        </div>
+        <div class="gal">
+          <img src="../images/img5.jpg">
+          <p>
+          <h3>Kerala</h3>
+          </p>
+          <p style="text-align:justify">“Explore Kerala – God’s Own Country with backwaters, lush greenery, beaches,
+            hill stations.”</p>
+          <button onclick="openPopup()">Book Now</button>
+        </div>
+        <div class="gal">
+          <img src="../images/img6.jpg">
+          <p>
+          <h3>Karnataka</h3>
+          </p>
+          <p style="text-align:justify">“Discover Karnataka – from majestic Mysore palaces and Hampi ruins to Bengaluru
+            and scenic hill stations.”</p>
+          <button onclick="openPopup()">Book Now</button>
+        </div>
+        <div class="gal">
+          <img src="../images/img9.jpg">
+          <p>
+          <h3>Darjeeling</h3>
+          </p>
+          <p style="text-align:justify">
+            “Discover Darjeeling – the Queen of Hills with tea gardens, toy train rides, and Himalayan views.”</p>
+          <button onclick="openPopup()">Book Now</button>
+        </div>
+        <div class="gal">
+          <img src="../images/img7.jpg">
+          <p>
+          <h3>Kashmir</h3>
+          </p>
+          <p style="text-align:justify">“Explore Jammu – the city of temples, scenic hills, and the gateway to the
+            Himalayas.”</p>
+          <button onclick="openPopup()">Book Now</button>
+        </div>
+        <div class="gal">
+          <img src="../images/img8.jpg">
+          <p>
+          <h3>Goa</h3>
+          </p>
+          <p style="text-align:justify">“Experience Goa – famous for golden beaches, vibrant nightlife, Portuguese
+            heritage,tropical charm.”</p>
+          <button style="background-color: #ffa500; color:white" onclick="openPopup()" id="cc">Book now</button>
+        </div>
+
+
+        <div class="gal">
+          <img src="../images/img10.jpg">
+          <p>
+          <h3>New Delhi</h3>
+          </p>
+          <p style="text-align:justify">Explore Delhi – India’s capital, where history meets modernity through grand
+            monuments, culture</p>
+          <button style="background-color: #ffa500; color:white" onclick="openPopup()">Book now</button>
+        </div>
+        <div class="gal">
+          <img src="../images/gal7.jpg">
+          <p>
+          <h3>Odisa</h3>
+          </p>
+          <p style="text-align:justify">Discover Odisha – land of ancient temples, pristine beaches, tribal culture, and
+            rich heritage.</p>
+          <button style="background-color: #ffa500; color:white" onclick="openPopup()">Book now</button>
+        </div>
+      </div>
+
+
+
+
+<!-- Its all about Book a package it has a form -->
+
+      <a name="booking"></a>
+      <section>
+
+        <div class="tt-pic">
+
+          <div>
+            <img src="../images/img1.jpg" class="tt-img">
+          </div>
+          <form action="">
+            <h2 style="text-align:center; padding-left:50px;"> ✈️ Plan Your Journey – Book Now </h2>
+            <div class="in">
+              <label for="name">Name</label>
+              <input type="text" id="name2" placeholder="Enter Your name" required>
+              <span id="nameerror2" style="color:red; background-color:transparent"></span><br><br>
+
+              <label for="contact">Contact</label>
+              <input type="number" id="contact2" placeholder="Enter your mobile Number" required>
+              <span id="contacterror2" style="color:red; background-color:transparent"></span><br><br>
+
+              <label for="Email">Email</label>
+              <input type="text" id="email2" placeholder="Enter Your Email" required>
+              <span id="emailerror2" style="color:red; background-color:transparent"></span><br><br>
+
+              <label for="count">How many</label>
+              <input type="number" id="count2" placeholder="Enter number of Travelers " required>
+              <span id="maxerror2" style="color:red; background-color:transparent"></span><br><br>
+
+              <label for="age">Age</label>
+              <input type="number" id="age2" placeholder="Enter your age " required>
+              <span id="ageerror2" style="color:red; background-color:transparent"></span><br><br>
+
+              <label for="place">Destination</label>
+              <select id="place2" name="place" required>
+                <option value="">-- Select Destination --</option>
+                <option value="paris">Maharashtra</option>
+                <option value="dubai">Punjab</option>
+                <option value="maldives">Tamilnadu</option>
+                <option value="switzerland">Kerala</option>
+                <option value="switzerland">Karnataka</option>
+                <option value="switzerland">Darjeeling</option>
+                <option value="switzerland">Kashmir</option>
+                <option value="switzerland">Goa</option>
+                <option value="switzerland">New Delhi</option>
+                <option value="switzerland">Odisa</option>
+                <option value="goa">Goa</option>
+              </select>
+              <span id="placeerror2" style="color:red; background-color:transparent"></span><br><br>
+
+
+              <label for="">Arrivals</label>
+              <input type="date" id="arr" required><br><br>
+
+              <label for="">Leaving</label>
+              <input type="date" required><br><br>
+
+              <input type="submit" value="Submit" style="background-color: #ffa500; color:white"
+                onclick="return validate2()">
+              <input type="reset" value="Reset" value="reset" style="background-color: #ffa500; color:white">
+
+          </form>
+        </div>
+      </section>
+
+
+
+
+<!-- In this section images will show  -->
+
+    </section>
+    <a name="gallery"></a>
+    <h3 style="text-align :center">TAKE A LOOK AT OUR GALLARY</h3>
+    <section>
+      <div class="gallery">
+        <img src="../images/gal1.jpg">
+        <img src="../images/gal2.jpg">
+        <img src="../images/gal5.jpg">
+        <img src="../images/gal4.jpg">
+        <img src="../images/gal6.jpg">
+        <img src="../images/gal3.jpg">
+      </div>
+    </section>
+    <a name="review"></a>
+    <!-- This section will show about customer reviews -->
+    <section>
+      <h1 style="text-align:center;">CUSTOMER REVIEWS</h1>
+
+      <div class="review">
+        <div class="rev">
+          <p>🌟🌟🌟🌟🌟</p>
+          <p>"The trip was perfectly organized! We enjoyed every moment in Kerala. Highly recommend this agency."</p>
+          <h4>- Priya Sharma</h4>
+        </div>
+
+        <div class="rev">
+          <p>🌟🌟🌟🌟</p>
+          <p>"Great service, good hotel choices, and smooth booking process for our Goa vacation."</p>
+          <h4>- Rahul Mehta</h4>
+        </div>
+
+        <div class="rev">
+          <p>🌟🌟🌟🌟🌟</p>
+          <p>"Amazing experience in Punjab. The team was very supportive throughout our journey."</p>
+          <h4>- Simran Kaur</h4>
+        </div>
+
+      </div>
+    </section>
+
+
+    <a name="about"></a>
+<!-- Its all about contact -->
+    <a name="Contact"></a>
+    <footer>
+      <div class="cont">
+        <div class="cc">
+          <p>
+          <h3>About us</h3>
+          </p>
+          <p>At TRAVEL, we believe every journey should be memorable and hassle-free. From customized holiday packages
+            to seamless hotel bookings and guided tours, we are committed to creating experiences that inspire. With
+            trusted partners across the globe and a passion for travel, we help you discover new destinations with
+            comfort, safety, and joy.</p>
+        </div>
+        <div class="cc">
+          <p>
+          <h3>Branch Locations</h3>
+          <p>TAMILNADU</p>
+          <p>KERALA</p>
+          <p>GOA</p>
+        </div>
+        <div class="cc">
+          <p>
+          <h3>Quick Links</h3>
+          </p>
+          <a href="#home" style="text-align: center;">Home</a><br><br>
+          <a href="#booking">Book</a><br><br>
+          <a href="#packages">Packages</a><br><br>
+          <a href="#gallery">Gallery</a><br><br>
+          <a href="#review">Review</a><br><br>
+          <a href="#Contact">Contact</a><br><br>
+        </div>
+        <div class="cc">
+          <h3>contact us</h3>
+          <p>Mobile:9098978987</p>
+          <p>Email:gginfo123@gmail.com</p>
+          <p></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../Javacript/demo.js"></script>
+</body>
+
+</html>

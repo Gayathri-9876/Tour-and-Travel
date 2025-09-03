@@ -1,0 +1,294 @@
+:root {
+  --main: #ffa500;
+}
+
+.nav {
+  background-color: #333;
+  height: 40px;
+  word-spacing: 40px;
+  text-indent: 200px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: var(--main);
+
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+video {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.gal {
+  padding: 10px;
+  display: inline-block;
+  width: 240px;
+  box-shadow: 10px 10px 100px rgb(155, 152, 165);
+  margin: 20px 20px;
+
+}
+
+.pack {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+button {
+  background-color: #ffa500;
+  height: 40px;
+  width: 90px;
+
+  color: white;
+  cursor: pointer;
+}
+
+div.gal img {
+
+  width: 240px;
+  height: 200px;
+
+
+}
+
+.services {
+  display: inline-block;
+}
+
+.contact {
+  display: flex;
+}
+
+span {
+  color: #ffa500;
+  background-color: rgb(218, 125, 54);
+  border-radius: 4px;
+}
+
+.book form {
+
+  display: flex;
+}
+
+.tt-pic {
+  background-color: #333;
+  color: white;
+  display: flex;
+  margin-bottom: 0;
+  padding: 40px 40px;
+}
+
+.tt-img {
+  height: 600px;
+  width: 400px;
+  padding-left: 120px;
+  margin-top: 10px;
+}
+
+.in {
+  padding-left: 90px;
+}
+
+.input {
+  border-radius: 10px;
+}
+
+.gallery {
+  background-color: #333;
+
+}
+
+.gallery img {
+  height: 400px;
+  width: 480px;
+  padding: 2px;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+
+.rev {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 20px 20px 100px rgb(0, 5, 5);
+  height: 200px;
+  width: 400px;
+  display: inline-block;
+  margin: 40px;
+  border: 2px solid;
+
+}
+
+.contact {
+  color: rgb(19, 19, 19);
+
+  padding: 50px 50px;
+  border: 1px solid red;
+
+  display: flex;
+}
+
+
+.in input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.in select {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 1200px;
+  margin: auto;
+  background-color: #333;
+
+}
+
+.cc {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+
+}
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.tt-pic input::placeholder {
+  color: black;
+}
+
+.popup-content input::placeholder {
+  color: black;
+}
+
+@media screen and (max-width:991px){
+.nav {
+
+  height: 50px;
+  width:885px;
+text-indent:80px;
+word-spacing:10px;
+font-size:19px;
+}
+*{
+
+}
+.video-container h1,h3{
+  font-size: 22px;
+}
+.gal {
+  padding: 25px;
+  display: inline-block;
+  width: 330px;
+  box-shadow: 20px 20px 200px rgb(155, 152, 165);
+  margin: 30px 30px;
+font-size: 22px;
+}
+div.gal img {
+
+  width: 350px;
+  height: 350px;
+
+
+}
+button {
+  background-color: #ffa500;
+  height: 60px;
+  width: 120px;
+font-size:17px;
+  color: white;
+  cursor: pointer;
+}
+.tt-pic {
+
+  display: flex;
+  margin-bottom: 0;
+  padding: 20px 20px;
+  font-size:22px;
+}
+
+.tt-img {
+  height: 600px;
+  width: 400px;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+.in {
+  padding-left: 30px;
+}
+.tt-pic input::placeholder {
+  font-size: 16px;
+}
+
+.tt-pic input::placeholder {
+  font-size: 16px;
+}
+.tt-pic select::placeholder {
+  font-size: 16px;
+}
+
+
+}
